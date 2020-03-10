@@ -16836,12 +16836,13 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #708090;
+  z-index: 9999;
 }
 
 .footer .container {
