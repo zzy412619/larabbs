@@ -22,8 +22,8 @@
       <ul class="navbar-nav navbar-right">
         <!-- Authentication Links -->
         @guest
-        <li class="nav-item"><a class="nav-link" href=
-                  <button class="btn b"{{ route('login') }}">登录</a></li>
+    
+        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">登录</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">注册</a></li>
           @else
           <li class="nav-item">
