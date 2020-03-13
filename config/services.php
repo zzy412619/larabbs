@@ -29,5 +29,10 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    
+    'baidu_translate' => [
+        'appid' => env('20200313000397411'),
+        'key'   => env('wamwnr6w48s2LNmUo4KT'),
+    ],
 
 ];
