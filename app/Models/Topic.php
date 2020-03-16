@@ -53,7 +53,7 @@ class Topic extends Model
     //一个话题下有多条回复
     public function replies()
     {
-        return $this->nasMany(Reply::class);
+        return $this->hasMany(Reply::class);
     }
 
 
