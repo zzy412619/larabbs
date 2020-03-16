@@ -42,4 +42,10 @@ class User extends Authenticatable implements MustVerifyEmailContract
     {
         return $this->hasMany(Topic::class);
     }
+
+    //一个用户拥有多条评论
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
 }

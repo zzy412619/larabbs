@@ -50,5 +50,11 @@ class Topic extends Model
         return route('topics.show', array_merge([$this->id, $this->slug], $params));
     }
 
+    //一个话题下有多条回复
+    public function replies()
+    {
+        return $this->nasMany(Reply::class);
+    }
+
 
 }
