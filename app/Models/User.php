@@ -66,4 +66,12 @@ class User extends Authenticatable implements MustVerifyEmailContract
     {
         return $this->hasMany(Reply::class);
     }
+
+    // 去除顶部未读消息标示的功能
+    public function markAsRead()
+    {
+        $this->notification_count = 0;
+        $this->save();
+        $this->unreadNotifications->markAsRead();
+    }
 }
