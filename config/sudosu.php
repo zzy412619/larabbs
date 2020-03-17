@@ -15,6 +15,7 @@ return [
     |
      */
     //允许使用的顶级域名
+    //'allowed_tlds' 就是判断网站的网址，如果是 .dev .local .test 结尾则可以访问插件
     'allowed_tlds' => ['dev', 'local','test'],
 
     /*
